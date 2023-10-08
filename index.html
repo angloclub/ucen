@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FFF2CD">
+    <title>Anglo Club</title>
+    <link rel = "icon" href = "Logo/ACBg.png" type = "image/x-icon">
+    <style>
+
+    </style>
+</head>
+<body>
+  <div class="respon-nav">
+    <div class="name">
+      <h2>Anglo Club </h2>
+      <a href="#" onclick="closeNavbar()"> <span class="material-symbols-outlined" id="close" >close</span></a>
+    </div>
+    <header>
+        <h2 id="dot" style="color:black;">.</h2>
+        <nav class="navigation" id="navbar">
+         <!-- --><br><br>
+          <a href="index.html" class="active"><span class="material-symbols-outlined" id="home" style="color: black;">
+              home</span>    Home</a>
+          <a href="Gallery.html"><span class="material-symbols-outlined" id="gallery">
+              hallway</span>    Gallery</a>
+          <a href="Materials.html"><span class="material-symbols-outlined" id="materials" >
+            book_2</span>    Materials</a>
+          <a href="AboutUs.html"><span class="material-symbols-outlined" id="aboutUs" >
+            info</span>    About Us</a><br id="blank"><br id="blank">
+          <a class="nav-bottom" style="bottom: 30px;" href="#"><span class="material-symbols-outlined" id="mail" >mail</span>angloclubucen@gmail.com</a>
+        </nav>
+        <div class="nav-bottom">
+        </div>
+    </header>
+    
+  </div>
+     <main>
+      <div style="padding-top: 50px;background-color: black;">
+     <button class="menu-icon" onclick="showNavbar()">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+    <!-- <br style="background-color: black">
+     <br style="background-color: black">--
+     <br style="background: black">-->
+      <div align="center" class="respon-div" style=background-color:black;padding:35px;margin:0px;padding-top:5px>
+        <div>
+            <center> 
+              <img src="Logo/ACBg.png" alt="Anglo Club logo" style=width:200px;height:200px;margin:0px;padding:20px> 
+            </center>
+        </div>
+        <div class="head">
+          <center>
+            <h1 style=font-size:45px;margin:0px;color:beige>Anglo Club</h1>
+            <h4 style=color:beige>The place to grow yourself.</h4>
+            <a href="#scroll1" class="cta-button"><span></span>Know more</a>
+          </center>
+        </div>
+     </div>    
+  </div>
+
+    <section id="scroll1">
+        <h2>About Us</h2>
+        <p>This is one of the student's club at JNTUK University College of Engineering Narasaraopet.<br> 
+         This club focuses on improving your Soft skills and personality development skills as they are essential because it improves our <i>employability</i> and enable students to <i>work harmoniously in dynamic environments</i>.<br>
+         This includes Leadership, Interpersonal skills, Adaptability, Teamwork, Problem Solving, Time Management, Communication skills and many more... </p>
+    </section>
+
+    <section id="Objectives">
+        <h2>Our Focuses</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>Communication Skills</h3>
+                <p>Different aspects of communication skills and how to develope them, group discussion, public speaking, presentation skills and effective listening.</p>
+            </div>
+            <div class="feature">
+                <h3>Vocabulary</h3>
+                <p>Having a good command of the Vocabularyof the language will help you to convey your ideas more effectively. It develops your skills in resume building, interviews, fluency, and other writing aactivities.</p>
+            </div>
+            <div class="feature">
+                <h3>Interpersonal Skills</h3>
+                <p>Importance of body language, grooming, Interview Skills- How to present oneself during interviews and ways to handle them.</p>
+            </div>
+            <div class="feature">
+                <h3>Resume building</h3>
+                <p>Details on structureand types of resumes, difference between CV and Resume, how tyo choose the right format for a resume</p>
+            </div>
+            
+            <div class="feature">
+                <h3>Command & Creativity</h3>
+                <p>Having a command of the language gives you a clear vision of how to express yourself which takes you one step closer to your goals and give your creativity a voice on this platform.</p>
+            </div>
+            
+            <div class="feature">
+                <h3>Curious Cognition</h3>
+                <p>Anglo Club is a way where individuals come together to engage their curiosity, deepen their understanding and thinking about the language.</p>
+            </div>
+        </div>
+    </section>
+<button type="button" id="btn-move-top"><span class="material-symbols-outlined" style="color: black;">
+  keyboard_double_arrow_up
+  </span></button>
+    <section id="cta">
+        <h2>Join Us Today</h2>
+        <p>Gain the passion for self development</p>
+        <a href="https://forms.gle/Rzje3ZoU7gCXWU2u8" class="cta-button-1">Register Now</a>
+    </section>
+  </main>
+    <footer>
+        <hr style="color: black;outline-color: black;">
+        <div><h1>Contact us</h1><br>
+        <p>For any queries, feel free to mail us at angloclubucen@gmail.com<p>
+        </div>
+       <!-- <div class="hub"><button class="hub-1" >Creative Hub</button></div>-->
+    </footer>
+    <script>
+  function showNavbar() {
+    document.getElementsByClassName('respon-nav')[0].style.left = '0px';
+    document.getElementById('dot').style.color="white";
+  }
+  function closeNavbar(){
+    document.getElementsByClassName('respon-nav')[0].style.left = '-600px';
+    document.getElementById('dot').style.color="black";
+  }
+
+  let mybutton = document.getElementById("btn-move-top");
+  window.onscroll = function () {
+  scrollFunction();
+  };
+  function scrollFunction() {
+  if (
+    document.body.scrollTop > 50 ||
+    document.documentElement.scrollTop > 50
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+  </script>
+</body>
+</html>
