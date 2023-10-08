@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="MoreStyle.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FFF2CD">
+    <title>Materials</title>
+    <link rel = "icon" href = "Logo/ACBg.png" type = "image/x-icon">
+</head>
+<body>
+    <header class="navHeader">
+        <h2 class="logo">Anglo Club</h2>
+        <nav class="moreNav" style=margin:0px;padding:0>
+           <!--- <div class="extra" ><h2 style="font-size: 25px;" >Anglo Club><a href="#" onclick="closeNavbar()" style="background-color: transparent;" > 
+                <span class="material-symbols-outlined" id="close" style="color: black;background-color: transparent;" >close</span></a></h2>
+              </div>-->
+              <br class="break"><br class="break"><br class="break"><br class="break"><br class="break">
+            <a href="index.html"><span class="material-symbols-outlined" id="home" >
+                home
+                </span> Home</a>
+              <a href="Gallery.html"><span class="material-symbols-outlined" id="gallery">
+                hallway</span> Gallery</a>
+              <a href="Materials.html" class="active"><span class="material-symbols-outlined" style="color: black;">
+                book_2
+                </span> Materials</a>
+              <a href="AboutUs.html"><span class="material-symbols-outlined" id="aboutUs" >
+                info
+                </span> About Us</a>
+                <a class="mail" style="bottom: 30px;" href="mailto:angloclubucen@gmail.com.com"><br><br><br><span class="material-symbols-outlined" id="mail" >mail</span>angloclubucen@gmail.com</a>            
+       
+        </nav>
+        <button class="menu-icon" onclick="showNavbar()">
+            <span class="material-symbols-outlined">menu</span>
+          </button> 
+          <button class="close" onclick="closeNavbar()" style="color: black;background-color: whitesmoke;"> 
+            <span class="material-symbols-outlined" id="close" style="color: black;" >close</span></button>
+       
+     </header>
+     <div class="heading">
+        <h2>We have got some valuable materials for you. Happy reading!</h2>
+        <h4>Items:4</h4>
+     </div>
+     <button type="button" id="btn-move-top"><span class="material-symbols-outlined" style="color: black;">
+      keyboard_double_arrow_up
+      </span></button>
+     <div class="features">
+        <div class="feature">
+            <h3>Self Intoduction</h3>
+            <p>You can incorpurate the above phrases during any self introduction.</p>
+            <a href="Documents/DOC-20230426-WA0031..pdf" download="Self Intoduction" class="download" target="_blank">Download<span class="material-symbols-outlined" style="color: black;">
+                download
+                </span></a>
+        </div>
+        <div class="feature">
+            <h3>Tenses</h3>
+            <p>Get to know tenses through infographs and don't forget to answer the quiz!</p>
+            <a href="Documents/tenses-infographics.pdf" download="Tenses" class="download" target="_blank">Download<span class="material-symbols-outlined" style="color: black;">
+                download
+                </span></a>
+        </div>
+        <div class="feature">
+            <h3>Phrases for daily conversation</h3>
+            <p>Try to use the above phrases in daily conversation and attempt the quiz.</p>
+            <a href="Documents/109. 25 Phrases for Daily Conversation.pdf" download="Phrases for daily conversation" class="download" target="_blank">Download<span class="material-symbols-outlined" style="color: black;">
+                download
+                </span></a>
+        </div>
+        <div class="feature">
+            <h3>Phonetics</h3>
+            <p>Learn phonetics to know the right pronunciation.</p>
+            <a href="Documents/phonetics.ppt.pdf" download="Phonetics" class="download" target="_blank">Download<span class="material-symbols-outlined" style="color: black;">
+                download
+                </span></a>
+        </div>
+    </div>
+    <footer>
+        <hr>
+        <div><h1>Contact us</h1><br>
+        <p>For any queries, feel free to mail us at angloclubucen@gmail.com<p>
+        </div>
+        <!--<div><button class="hub" >Creative Hub</button></div>-->
+    </footer>
+    <script>
+        alert("The contents shared here are obtained from the internet. Kindly check the originial creators also.");
+        function showNavbar() {
+  document.getElementsByClassName('moreNav')[0].style.left = '0px';
+  document.getElementsByClassName('menu-icon')[0].style.display = 'none';
+  document.getElementsByClassName('close')[0].style.display = 'block';
+  document.getElementsByTagName("header")[0].style.backgroundColor = "#f9f9f9";
+  document.getElementsByTagName("header")[0].style.color = "black";
+}
+     function closeNavbar(){
+  document.getElementsByClassName('moreNav')[0].style.left = '-1500px';
+  document.getElementsByClassName('menu-icon')[0].style.display = 'block';
+  document.getElementsByClassName('close')[0].style.display = 'none'; 
+  document.getElementsByTagName("header")[0].style.backgroundColor = "black";
+  document.getElementsByTagName("header")[0].style.color = "white";
+}
+
+
+let mybutton = document.getElementById("btn-move-top");
+  window.onscroll = function () {
+  scrollFunction();
+  };
+  function scrollFunction() {
+  if (
+    document.body.scrollTop > 50 ||
+    document.documentElement.scrollTop > 50
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+    </script>
+</body>
+</html>

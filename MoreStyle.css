@@ -1,0 +1,349 @@
+.heading{
+    text-align: center;
+}
+#home:hover,#gallery:hover,#materials:hover,#about:hover{
+   color: black;  
+}
+.download{
+    color: black;
+    text-decoration: none;
+}
+.other{
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+}
+nav img{
+    width: 100px;
+    height: 100px;
+    
+}
+nav .img{
+    margin-left: 810px; 
+}
+.logo{
+    font-size: 35px;
+    margin:0;
+}
+#expand{
+    vertical-align: text-bottom;
+    transform: rotate(180);
+}
+.features-1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.feature-1 {
+    max-width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 13px;
+    text-align: center;
+}
+.features-1 :hover{
+    box-shadow: 0 0 0 4px #8888; /*, 0 0 0 8px white;*/
+}
+.material-symbols-outlined1 {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  font-weight: bolder;
+  vertical-align: bottom;
+  color: black;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    color: white;
+    vertical-align: text-top;
+  }
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  cursor: pointer;
+  font-weight: 100;
+}
+.heading2 input:focus{
+    outline: none;
+}
+.heading2{
+	justify-items: right;
+	text-align: right;
+}
+.heading2 .search-btn{
+   background-color: white;
+   border: 1px solid black;
+   border-radius: 25px;
+   padding: 10px;
+   padding-bottom: 15px;
+   align-items: left;
+   margin-left: 10px;
+}
+.heading2 .search-btn :hover{
+   box-shadow: 0 0 0 4px white;
+}
+.heading2 .search{
+    border: 0px none;
+    align-items: left;
+    
+}
+footer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+.foot{
+    top:0;
+}
+.moreNav a {
+    background-color: black;
+    border-radius: 25px;
+    color:beige;
+    padding: 15px 15px;
+    
+}
+.moreNav a:hover, .moreNav a.active{
+    background:beige;
+    color:black;
+    padding: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    
+}
+
+.moreNav a:hover #home,.moreNav a:hover #materials,.moreNav a:hover #aboutUs,.moreNav a:hover #gallery{
+    color: black;
+}
+header {
+    background-color: black;
+    color: #fff;
+    padding: 40px;
+    margin:0px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    z-index:100;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.extra{
+    display: none;
+}
+.close, .mail{
+    display: none;
+}
+.close{
+    background-color: #f9f9f9;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0%;
+    transition: 3s;
+}
+#close{
+    padding-bottom: 40px;
+    background-color: #f9f9f9;
+
+}
+.others{
+    display: none;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.pics{
+    flex: 30%;
+  padding: 0 4px;
+}
+.pics img {
+    margin-top: 8px;
+    vertical-align: middle;
+    max-width: 30vw;
+    padding: 10px;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+}
+.break{
+    display: none;
+}
+img:hover{
+    transform: scale(1.03);
+}
+footer{
+    background-color: #f9f9f9;
+    color: black;
+}
+@media screen and (max-width: 768px) {
+    .pics{
+        flex: 95%;
+    }
+    .pics img{ max-width: 87vw;}
+    .extra{
+        display: none;
+    }
+    .mail,.break{
+       display: block; 
+    }
+    .mail{
+        text-indent: 28px;
+    }
+    h2{
+        font-size: 22px;
+		display: flex;
+    }
+    .menu-icon{
+        display: block;
+        color: #fff;
+    }
+    #home,#gallery,#materials,#about{
+        color: black;
+    }
+    nav{
+        display: block;
+        position: fixed;
+        padding: 20px;
+        color: black;
+        background-color: #f9f9f9;
+        width: 100vh;
+        height: 50vh;
+        padding-top: 30px;
+        top: 50px;
+    }
+    nav a{
+        text-decoration: none;
+        padding: 50px;
+        font-size: 17px;
+        max-width: 75vw;
+        text-indent: 13px;
+        text-align: justify;
+    }
+    .moreNav{
+        margin-bottom: 0vh;
+        top: 129px;
+        bottom: 0;
+        left: -1500px;
+        background-color: #f9f9f9;
+        color: black;
+        padding-top: 40px;
+        width: 99vw;
+        height: auto;
+        transition: 0.5s;
+    }
+    nav a.active{
+        text-indent: 18px;
+    }
+    .moreNav a.active{
+        background-color: none;
+    }
+    .moreNav a{
+        
+        display: block;
+        color: black;
+        background-color: #f9f9f9;
+        padding: 20px;
+        top: 50px;
+    }
+    .moreNav a.active{
+        color: black;
+    }
+    .features{
+        
+    }
+    footer{
+        background-color: #1b1212;
+        color: white;
+    }
+}
+/*
+@media screen and (max-width: 768px) {
+    #dot{
+        color: white;
+    }
+    .respon-div{
+        padding-top: 40px;
+    }
+    #blank{
+        display: block;
+    }
+    main{
+        padding-top: ;
+    }
+    #navbar {
+      flex-direction: column;
+    }
+    .menu-icon{
+        display: block;
+    }
+    header{
+        background-color: white;
+    }
+    .respon-nav .nav-bottom{
+        display: block;
+        text-align: ;
+        text-decoration: none;
+        color: black;
+        padding-bottom: 60px;
+        background-color: white;
+    }
+    .moreNav a.active{
+        text-decoration: solid;
+        background-color:;
+        color: black;
+    }
+    #home,#gallery,#materials,#aboutUs,#mail,#close{
+        color: black;
+    }
+    #close{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        vertical-align: sub;
+        padding-top: 45px;
+
+    }
+    .moreNav a{
+        text-decoration: solid;
+        background-color: white;
+        color: black;
+        text-align: left;
+        top: 60px
+    }
+    .moreNav{
+        width: 100vh;
+        height: 50vh;
+        margin-bottom: 20vh;
+        
+    }
+    .name{
+        display: flex;
+        background-color: white;
+        color: #000000;
+        font-size: 25px;
+        padding-left: 25px;
+        padding-top: 25px;
+        padding-bottom: 5px;
+        margin-bottom: -5px;
+        justify-content: space-around;
+        right: 0;
+        left: 100px;
+    }
+    .respon-nav{
+        position: fixed ;
+        background-color: white;
+        max-width: 48vh;
+        height: 110vh;
+        left: -600px;
+        transition-duration: 0.5s;
+    }
+}
+*/

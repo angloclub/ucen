@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="MoreStyle.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FFF2CD">
+    <title>About Us</title>
+    <link rel = "icon" href = "Logo/ACBg.png" type = "image/x-icon">
+</head>
+<body>
+    <header>
+        <h2 class="logo">Anglo Club</h2>
+        <nav class="moreNav" style=margin:0px;padding:0>
+          <div class="extra" ><h2 style="font-size: 25px;" >Anglo Club><a href="#" onclick="closeNavbar()" style="background-color: transparent;" > 
+            <span class="material-symbols-outlined" id="close" style="color: black;background-color: transparent;" >close</span></a></h2>
+          </div>
+          <br class="break"><br class="break"><br class="break"><br class="break"><br class="break">
+            <a href="index.html"><span class="material-symbols-outlined" id="home">
+                home
+                </span> Home</a>
+              <a href="Gallery.html" ><span class="material-symbols-outlined" id="gallery">
+                hallway</span> Gallery</a>
+              <a href="Materials.html"><span class="material-symbols-outlined" id="materials">
+                book_2
+                </span> Materials</a>
+              <a href="AboutUs.html" class="active"><span class="material-symbols-outlined" id="about" style="color: black;">
+                info
+                </span> About Us</a>
+                <a class="mail" style="bottom: 30px;" href="mailto:angloclubucen@gmail.com.com"><br><br><br><span class="material-symbols-outlined" id="mail" >mail</span>angloclubucen@gmail.com</a>            
+                
+        </nav> 
+        <button class="menu-icon" onclick="showNavbar()">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+        <button class="close" onclick="closeNavbar()" style="color: black;background-color: whitesmoke;"> 
+          <span class="material-symbols-outlined" id="close" style="color: black;" >close</span></button>
+     </header>
+    <button type="button" id="btn-move-top"><span class="material-symbols-outlined" style="color: black;">
+      keyboard_double_arrow_up</span>
+    </button>
+    <div style="padding: 25px;font-size: 17px;" >
+      <p style="text-indent: 50px;" >Anglo Club is one of the students' club at JNTUK University College of Engineering Narasaraopet dedicated to assisting students
+        in their learning and development of the essential skills they need to succeed in their workplace.<!--<br></p><p style="text-indent: 50px;">-->
+        Some of the skills include communication skills as they are ability to effectively convey your thoughts and ideas to others, 
+        both verbally and in writing. Interpersonal skills are the ability to interact with others in a positive and productive way. Resume 
+        building is the process of creating a document that highlights your skills and experience in order to make a 
+        good impression on potential employers.<br></p>
+        <p style="text-indent: 50px;">
+        We believe that these skills are critical for success in any career, and we are committed in providing our members with the resources
+         and support they need to thrive. We offer a wide range of activities and resources to our members like,
+         <ul>
+          <li style="list-style: disc;">
+            Workshops and seminars on topics such as public speaking, active listening, conflict resolution, resume writing, and interview skills.
+          </li>
+          <li style="list-style: disc;">
+            We host regular social activities and enhance networking opportunities to help our members connect with each other.
+          </li>
+          <li style="list-style: disc;">
+            We offer our members the opportunity to participate in mock interviews. This can help our members feel more confident and prepared when they go on real interviews.
+          </li>
+          <li style="list-style: disc;">
+            Materials are provided and discussion groups on topics related to communication, interpersonal skills, and career development are performed.
+          </li>
+          <li style="list-style: disc;">
+            Job search assistance, including help with writing resumes and cover letters, preparing for interviews.
+          </li>
+         </ul>
+         </p><p style="text-indent: 50px;">Our club is open to students from all branches. We are committed to creating a supportive and inclusive environment where everyone can learn and grow. 
+          If you are interested in developing the skills you need to succeed in the workplace, we encourage you to <a href="" style="text-decoration: underline;color: black;"> join the Anglo Club</a>.
+      </p>
+    </div>
+     <footer>
+        <hr>
+        <div><h1>Contact us</h1><br>
+        <p>For any queries, feel free to mail us at angloclubucen@gmail.com</p>
+        </div>
+        <!--<div><button class="hub" >Creative Hub</button></div>-->
+    </footer>
+    <script>
+      function showNavbar() {
+  document.getElementsByClassName('moreNav')[0].style.left = '0px';
+  document.getElementsByClassName('menu-icon')[0].style.display = 'none';
+  document.getElementsByClassName('close')[0].style.display = 'block';
+  document.getElementsByTagName("header")[0].style.backgroundColor = "#f9f9f9";
+  document.getElementsByTagName("header")[0].style.color = "black";
+}
+     function closeNavbar(){
+  document.getElementsByClassName('moreNav')[0].style.left = '-1500px';
+  document.getElementsByClassName('menu-icon')[0].style.display = 'block';
+  document.getElementsByClassName('close')[0].style.display = 'none'; 
+  document.getElementsByTagName("header")[0].style.backgroundColor = "black";
+  document.getElementsByTagName("header")[0].style.color = "white";
+}
+
+
+let mybutton = document.getElementById("btn-move-top");
+  window.onscroll = function () {
+  scrollFunction();
+  };
+  function scrollFunction() {
+  if (
+    document.body.scrollTop > 50 ||
+    document.documentElement.scrollTop > 50
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+  </script>
+</body>
+</html>
